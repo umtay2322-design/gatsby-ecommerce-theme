@@ -40,7 +40,6 @@ const IndexPage = () => {
       {/* Mesaj Kutusu */}
       <div className={styles.messageContainer}>
         <p>
-          Bu site <span className={styles.gold}>matter design</span> tarafından geliştirilen Sydney temasının bir demosudur.
         </p>
         <p>
           Giyim markaları: <span className={styles.gold}>sunspel</span> ve <span className={styles.gold}>scotch&soda</span>
@@ -97,7 +96,7 @@ const IndexPage = () => {
       {/* Alıntı */}
       <Quote
         bgColor={'var(--standard-light-grey)'}
-        title={'Sydney Hakkında'}
+        title={'Atölyemiz Hakkında'}
         quote={
           '“Biz iki şeye inanıyoruz: yaptığımız her şeyde kalite arayışı ve birbirimize destek olmak. Gerisi kendiliğinden hallolur.”'
         }
