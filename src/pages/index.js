@@ -31,36 +31,34 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
+        title={'Bilmem Ne Atölyesi\'ne Hoşgeldiniz'}
+        subtitle={'Giyim ihtiyaçlarınızın tek adresi'}
+        ctaText={'Şimdi alışverişe başla'}
         ctaAction={goToShop}
       />
 
-      {/* Message Container */}
+      {/* Mesaj Kutusu */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
+          Bu site <span className={styles.gold}>matter design</span> tarafından geliştirilen Sydney temasının bir demosudur.
         </p>
         <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
+          Giyim markaları: <span className={styles.gold}>sunspel</span> ve <span className={styles.gold}>scotch&soda</span>
         </p>
       </div>
 
-      {/* Collection Container */}
+      {/* Koleksiyon Kutusu */}
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
-          <Title name={'New Collection'} />
+          <Title name={'Yeni Koleksiyon'} />
           <ProductCollectionGrid />
         </Container>
       </div>
 
-      {/* New Arrivals */}
+      {/* Yeni Gelenler */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
+          <Title name={'Yeni Gelenler'} link={'/shop'} textLink={'tümünü gör'} />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -71,73 +69,73 @@ const IndexPage = () => {
         </Container>
       </div>
 
-      {/* Highlight  */}
+      {/* Öne Çıkan Ürün */}
       <div className={styles.highlightContainer}>
         <Container size={'large'} fullMobile>
           <Highlight
             image={'/highlight.png'}
-            altImage={'highlight image'}
+            altImage={'öne çıkan görsel'}
             miniImage={'/highlightmin.png'}
-            miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
+            miniImageAlt={'mini öne çıkan görsel'}
+            title={'Lüks Trikolar'}
+            description={`Bu yumuşak kuzu yünü kazak, İskoçya'da dünyanın en eski iplik üreticilerinden biri tarafından üretilen iplikle örülmüştür.`}
+            textLink={'şimdi satın al'}
             link={'/shop'}
           />
         </Container>
       </div>
 
-      {/* Promotion */}
+      {/* Kampanya */}
       <div className={styles.promotionContainer}>
-        <Hero image={toOptimizedImage('/banner2.png')} title={`-50% off \n All Essentials`} />
+        <Hero image={toOptimizedImage('/banner2.png')} title={`%50 indirim \n Tüm Temel Ürünlerde`} />
         <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
+          <Link to={'/shop'}>KADIN</Link>
+          <Link to={'/shop'}>ERKEK</Link>
         </div>
       </div>
 
-      {/* Quote */}
+      {/* Alıntı */}
       <Quote
         bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        title={'Sydney Hakkında'}
         quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
+          '“Biz iki şeye inanıyoruz: yaptığımız her şeyde kalite arayışı ve birbirimize destek olmak. Gerisi kendiliğinden hallolur.”'
         }
       />
 
       {/* Blog Grid */}
       <div className={styles.blogsContainer}>
         <Container size={'large'}>
-          <Title name={'Journal'} subtitle={'Notes on life and style'} />
+          <Title name={'Günlük'} subtitle={'Hayat ve stil üzerine notlar'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
       </div>
 
-      {/* Promotion */}
+      {/* Sürdürülebilirlik */}
       <div className={styles.sustainableContainer}>
         <Hero
           image={toOptimizedImage('/banner3.png')}
-          title={'We are Sustainable'}
+          title={'Sürdürülebiliriz'}
           subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
+            'Toprağımıza sahip çıkmaktan insanımıza destek olmaya kadar, çevremiz için attığımız adımları keşfedin.'
           }
-          ctaText={'read more'}
+          ctaText={'devamını oku'}
           maxWidth={'660px'}
           ctaStyle={styles.ctaCustomButton}
         />
       </div>
 
-      {/* Social Media */}
+      {/* Sosyal Medya */}
       <div className={styles.socialContainer}>
         <Title
-          name={'Styled by You'}
-          subtitle={'Tag @sydney to be featured.'}
+          name={'Senin Tarzınla'}
+          subtitle={'@sydney etiketle, öne çık.'}
         />
         <div className={styles.socialContentGrid}>
-          <img src={toOptimizedImage(`/social/socialMedia1.png`)} alt={'social media 1'} />
-          <img src={toOptimizedImage(`/social/socialMedia2.png`)} alt={'social media 2'} />
-          <img src={toOptimizedImage(`/social/socialMedia3.png`)} alt={'social media 3'} />
-          <img src={toOptimizedImage(`/social/socialMedia4.png`)} alt={'social media 4'} />
+          <img src={toOptimizedImage(`/social/socialMedia1.png`)} alt={'sosyal medya 1'} />
+          <img src={toOptimizedImage(`/social/socialMedia2.png`)} alt={'sosyal medya 2'} />
+          <img src={toOptimizedImage(`/social/socialMedia3.png`)} alt={'sosyal medya 3'} />
+          <img src={toOptimizedImage(`/social/socialMedia4.png`)} alt={'sosyal medya 4'} />
         </div>
       </div>
       <AttributeGrid />

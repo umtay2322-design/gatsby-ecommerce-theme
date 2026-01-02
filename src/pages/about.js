@@ -7,6 +7,7 @@ import Layout from '../components/Layout/Layout';
 
 import * as styles from './about.module.css';
 import { toOptimizedImage } from '../helpers/general';
+
 const AboutPage = (props) => {
   let historyRef = useRef();
   let valuesRef = useRef();
@@ -28,98 +29,96 @@ const AboutPage = (props) => {
         <Hero
           maxWidth={'900px'}
           image={'/about.png'}
-          title={`Sydney \n A British brand since 1860`}
+          title={`Sydney \n 1860’tan Beri İngiliz Markası`}
         />
 
         <div className={styles.navContainer}>
           <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>
-            History
+            Tarihçe
           </ThemeLink>
           <ThemeLink onClick={() => handleScroll(valuesRef)} to={'#values'}>
-            Values
+            Değerlerimiz
           </ThemeLink>
           <ThemeLink
             onClick={() => handleScroll(sustainabilityRef)}
             to={'#sustainability'}
           >
-            Sustainability
+            Sürdürülebilirlik
           </ThemeLink>
         </div>
 
         <Container size={'large'} spacing={'min'}>
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
-              Founded in 1860, Sydney is an innovative British brand with a
-              contemporary edge. We make timeless everyday luxury clothing.
+              1860 yılında kurulan Sydney, yenilikçi ve çağdaş bir İngiliz
+              markasıdır. Zamansız, günlük lüks giyim üretiriz.
             </p>
             <br />
             <br />
             <p>
-              We created some of the world's first T-shirts and spent decades
-              perfecting the feel of the cotton. Today we are the only brand
-              that makes T-shirts in its own factory in the UK. And we do this
-              in the same factory we have occupied since 1937.
+              Dünyanın ilk tişörtlerinden bazılarını biz ürettik ve pamuk
+              dokusunu mükemmelleştirmek için onlarca yıl harcadık. Bugün,
+              İngiltere’de kendi fabrikasında tişört üreten tek markayız. Bunu
+              1937’den beri bulunduğumuz aynı fabrikada yapıyoruz.
             </p>
           </div>
         </Container>
 
         <div className={styles.imageContainer}>
-          <img alt={'shirt brand'} src={toOptimizedImage('/about1.png')}></img>
+          <img alt={'gömlek markası'} src={toOptimizedImage('/about1.png')}></img>
         </div>
 
         <Container size={'large'} spacing={'min'}>
           <div className={styles.content}>
-            <h3>Our Values</h3>
+            <h3>Değerlerimiz</h3>
             <div ref={valuesRef}>
               <p>
-                Sunspel produced some of the world's earliest T-shirts. In the
-                late 1800s the business made luxury tunics and undershirts from
-                lightweight Sea Island cotton for export to the Far East and
-                other warm climates. While these garments initially had silk
-                buttoned plackets, these were removed in the early 1900s and
-                replaced with simple bound necks to reduce manufacturing costs -
-                creating the T-shirt. We've supplied the world as the T-shirt
-                has evolved from underwear to outerwear, from symbol of youthful
-                rebellion to everyday wardrobe staple, and we've spent decades
-                refining its every last aspect.
+                Sunspel, dünyanın en eski tişörtlerinden bazılarını üretti. 1800’lerin
+                sonlarında iş, hafif Sea Island pamuktan lüks tunikler ve iç
+                gömlekler üreterek Uzak Doğu ve sıcak iklimlere ihraç etti. Başta
+                ipek düğmeli yakalar vardı, ancak 1900’lerin başında üretim
+                maliyetlerini azaltmak için basit yuvarlak yakalarla değiştirildi —
+                böylece tişört ortaya çıktı. Tişört, iç giyimden dış giyime,
+                gençlik isyanının sembolünden günlük gardırobun vazgeçilmezine
+                dönüşürken biz de her detayını mükemmelleştirmek için onlarca yıl
+                harcadık.
               </p>
               <ol>
-                <li>Be an ecowear</li>
-                <li>Sophisticated and not mass-produced</li>
-                <li>Only natural materials</li>
+                <li>Çevre dostu giyim</li>
+                <li>Seçkin ve seri üretim olmayan</li>
+                <li>Sadece doğal malzemeler</li>
               </ol>
-              <img alt={'founder'} src={toOptimizedImage('/about2.png')}></img>
+              <img alt={'kurucu'} src={toOptimizedImage('/about2.png')}></img>
             </div>
-            <h3>Sustainability</h3>
+            <h3>Sürdürülebilirlik</h3>
             <div id={'#sustainability'} ref={sustainabilityRef}>
               <p>
-                Our founder, Thomas Hill, had both an eye for quality and a
-                desire to innovate. As well as using the finest fibres such as
-                Sea Island cotton, cashmere and silk, he invented his own
-                fabrics. Sunspel continues this commitment to innovation today
-                and our unique fabrics include: Q100 Sea Island cotton, Q82
-                Supima cotton, Q75 warp knit mesh cotton and Q14 warp knit
-                cellular cotton. The technology behind these fabrics remains
-                unchanged today and all Sunspel products use the finest cottons,
-                wools and fibres.
+                Kurucumuz  hem kaliteye hem de yeniliğe önem verirdi.
+                Sea Island pamuk, kaşmir ve ipek gibi en iyi lifleri kullanmanın
+                yanı sıra kendi kumaşlarını da icat etti. Sunspel bugün de bu
+                yenilik taahhüdünü sürdürüyor ve benzersiz kumaşlarımız arasında:
+                Q100 Sea Island pamuk, Q82 Supima pamuk, Q75 atkı örme pamuk ve
+                Q14 hücresel pamuk bulunuyor. Bu kumaşların teknolojisi bugün de
+                değişmeden devam ediyor ve tüm Sunspel ürünleri en kaliteli pamuk,
+                yün ve liflerle üretiliyor.
               </p>
               <p>
-                Made in Long Eaton, England and crafted from our luxurious long
-                staple Supima cotton for unparalleled softness, comfort and
-                durability, the Sunspel T-shirt has a classic fit and only the
-                most essential details.{' '}
+                Türkiye’de üretilen ve uzun elyaflı Supima pamuktan
+                yapılan Sunspel tişört, eşsiz yumuşaklık, konfor ve dayanıklılık
+                sunar. Klasik kesime sahiptir ve yalnızca en gerekli detayları
+                içerir.
               </p>
               <p>
-                With over 100 years spent perfecting fabric, fit and style, the
-                Sunspel Classic T-shirt is recognised as the finest in the
-                world.
+                Kumaş, kesim ve stil üzerinde 100 yılı aşkın süredir çalışarak
+                mükemmelleştirdiğimiz Sunspel Klasik Tişört, dünyanın en iyisi
+                olarak kabul edilmektedir.
               </p>
             </div>
           </div>
         </Container>
 
         <div className={styles.imageContainer}>
-          <img alt={'shirt backwards'} src={toOptimizedImage('/about3.png')}></img>
+          <img alt={'arkadan gömlek'} src={toOptimizedImage('/about3.png')}></img>
         </div>
       </div>
     </Layout>

@@ -14,9 +14,9 @@ const CartPage = (props) => {
   const sampleCartItem = {
     image: '/products/pdp1.jpeg',
     alt: '',
-    name: 'Lambswool Crew Neck Jumper',
+    name: 'Kuzu Yünü Bisiklet Yaka Kazak',
     price: 220,
-    color: 'Anthracite Melange',
+    color: 'Antrasit Melanj',
     size: 'XS',
   };
 
@@ -29,17 +29,17 @@ const CartPage = (props) => {
               <Link className={styles.shopLink} to={'/shop'}>
                 <Icon symbol={'arrow'}></Icon>
                 <span className={styles.continueShopping}>
-                  Continue Shopping
+                  Alışverişe Devam Et
                 </span>
               </Link>
             </div>
             <Brand />
             <div className={styles.loginContainer}>
-              <Link to={'/login'}>Login</Link>
+              <Link to={'/login'}>Giriş Yap</Link>
             </div>
           </div>
           <div className={styles.summaryContainer}>
-            <h3>My Bag</h3>
+            <h3>Sepetim</h3>
             <div className={styles.cartContainer}>
               <div className={styles.cartItemsContainer}>
                 <CartItem {...sampleCartItem} />

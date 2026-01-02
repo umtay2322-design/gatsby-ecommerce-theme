@@ -35,14 +35,14 @@ const LoginPage = (props) => {
 
     if (validateEmail(loginForm.email) !== true) {
       tempError.email =
-        'Please use a valid email address, such as user@example.com.';
+        'Lütfen geçerli bir e‑posta adresi kullanın, örneğin user@example.com.';
       validForm = false;
     } else {
       tempError.email = '';
     }
 
     if (isEmpty(loginForm.password) === true) {
-      tempError.password = 'Field required';
+      tempError.password = 'Bu alan zorunludur';
       validForm = false;
     } else {
       tempError.password = '';
@@ -51,14 +51,14 @@ const LoginPage = (props) => {
     if (validForm === true) {
       setErrorForm(errorState);
 
-      //mock login
+      // mock login
       if (loginForm.email !== 'error@example.com') {
         navigate('/account');
         window.localStorage.setItem('key', 'sampleToken');
       } else {
         window.scrollTo(0, 0);
         setErrorMessage(
-          'There is no such account associated with this email address'
+          'Bu e‑posta adresiyle ilişkili bir hesap bulunamadı'
         );
       }
     } else {
@@ -79,9 +79,9 @@ const LoginPage = (props) => {
 
       <div className={styles.root}>
         <div className={styles.loginFormContainer}>
-          <h1 className={styles.loginTitle}>Login</h1>
+          <h1 className={styles.loginTitle}>Giriş Yap</h1>
           <span className={styles.subtitle}>
-            Please enter your e-mail and password
+            Lütfen e‑posta adresinizi ve şifrenizi girin
           </span>
           <form
             noValidate
@@ -93,7 +93,7 @@ const LoginPage = (props) => {
               value={loginForm.email}
               handleChange={(id, e) => handleChange(id, e)}
               type={'email'}
-              labelName={'Email'}
+              labelName={'E‑posta'}
               error={errorForm.email}
             />
 
@@ -102,26 +102,26 @@ const LoginPage = (props) => {
               value={loginForm.password}
               handleChange={(id, e) => handleChange(id, e)}
               type={'password'}
-              labelName={'Password'}
+              labelName={'Şifre'}
               error={errorForm.password}
             />
             <div className={styles.forgotPasswordContainer}>
               <Link to={'/forgot'} className={styles.forgotLink}>
-                Forgot Password
+                Şifremi Unuttum
               </Link>
             </div>
 
             <Button fullWidth type={'submit'} level={'primary'}>
-              LOG IN
+              GİRİŞ YAP
             </Button>
-            <span className={styles.createLink}>New Customer? </span>
+            <span className={styles.createLink}>Yeni Müşteri misiniz? </span>
             <Button
               type={'button'}
               onClick={() => navigate('/signup')}
               fullWidth
               level={'secondary'}
             >
-              create an account
+              Hesap Oluştur
             </Button>
           </form>
         </div>

@@ -35,23 +35,23 @@ const ShopPage = (props) => {
           <div className={styles.breadcrumbContainer}>
             <Breadcrumbs
               crumbs={[
-                { link: '/', label: 'Home' },
-                { link: '/', label: 'Woman' },
-                { label: 'Sweaters' },
+                { link: '/', label: 'Anasayfa' },
+                { link: '/', label: 'Kadın' },
+                { label: 'Kazaklar' },
               ]}
             />
           </div>
         </Container>
         <Banner
           maxWidth={'650px'}
-          name={`Woman's Sweaters`}
+          name={`Kadın Kazakları`}
           subtitle={
-            'Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.'
+            'Kadın kazak koleksiyonumuzda modern ve rahat tasarımları keşfedin. Cesur desenli midi modellerden yere kadar uzanan şık stillere ve kolay kombinlenebilen parçalarımıza kadar her ruh haline uygun seçenekler sizi bekliyor.'
           }
         />
         <Container size={'large'} spacing={'min'}>
           <div className={styles.metaContainer}>
-            <span className={styles.itemCount}>476 items</span>
+            <span className={styles.itemCount}>476 ürün</span>
             <div className={styles.controllerContainer}>
               <div
                 className={styles.iconContainer}
@@ -59,12 +59,12 @@ const ShopPage = (props) => {
                 onClick={() => setShowFilter(!showFilter)}
               >
                 <Icon symbol={'filter'} />
-                <span>Filters</span>
+                <span>Filtreler</span>
               </div>
               <div
                 className={`${styles.iconContainer} ${styles.sortContainer}`}
               >
-                <span>Sort by</span>
+                <span>Sırala</span>
                 <Icon symbol={'caret'} />
               </div>
             </div>
@@ -79,13 +79,13 @@ const ShopPage = (props) => {
             <Chip name={'S'} />
           </div>
           <div className={styles.productContainer}>
-            <span className={styles.mobileItemCount}>476 items</span>
+            <span className={styles.mobileItemCount}>476 ürün</span>
             <ProductCardGrid data={data}></ProductCardGrid>
           </div>
           <div className={styles.loadMoreContainer}>
-            <span>6 of 456</span>
+            <span>6 / 456</span>
             <Button fullWidth level={'secondary'}>
-              LOAD MORE
+              DAHA FAZLA YÜKLE
             </Button>
           </div>
         </Container>

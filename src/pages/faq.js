@@ -11,102 +11,93 @@ const FaqPage = (props) => {
       <div className={styles.root}>
         <Banner
           maxWidth={'650px'}
-          name={`Frequently Asked Questions`}
+          name={`Sıkça Sorulan Sorular`}
           bgImage={'/faqCover.png'}
           color={'var(--standard-white)'}
           height={'350px'}
         />
         <Container>
           <div className={styles.section}>
-            <span>Your Orders</span>
+            <span>Siparişleriniz</span>
             <div className={styles.subSection}>
-              <h3>Deliveries</h3>
+              <h3>Teslimatlar</h3>
               <p>
-                To review the status of your order please visit the "My Orders"
-                section of your Sunspel Account. You should receive an email
-                notification when your package is dispatched. Please check your
-                email inbox and your junk filter.
+                Siparişinizin durumunu görmek için hesabınızdaki "Siparişlerim"
+                bölümünü ziyaret edin. Paketiniz gönderildiğinde e‑posta bildirimi
+                alacaksınız. Lütfen e‑posta gelen kutunuzu ve spam klasörünüzü kontrol edin.
               </p>
               <p>
-                We dispatch all orders within 24 hours of being placed. During
-                our sale periods it can get very busy in our factory, orders may
-                take a little longer to be dispatched so please add five working
-                days just in case.
+                Tüm siparişler 24 saat içinde gönderilir. İndirim dönemlerinde fabrikamızda
+                yoğunluk olabileceğinden siparişlerin gönderimi biraz daha uzun sürebilir.
+                Bu nedenle fazladan 5 iş günü eklemenizi öneririz.
               </p>
               <p>
-                If there’s something you want to know about your order, please
-                get in touch with us at customerservice@example.com or call us
-                on +44 (0)115 111 1111.
+                Siparişinizle ilgili bilmek istediğiniz bir şey olursa
+                customerservice@example.com adresinden bize e‑posta gönderebilir veya
+                +44 (0)115 111 1111 numaralı telefondan arayabilirsiniz.
               </p>
             </div>
             <div className={styles.subSection}>
-              <h3>Returns & Exchanges</h3>
+              <h3>İade & Değişim</h3>
               <p>
-                To review the status of your order please visit the "My Orders"
-                section of your Sunspel Account. You should receive an email
-                notification when your package is dispatched. Please check your
-                email inbox and your junk filter.
+                Siparişinizin durumunu görmek için hesabınızdaki "Siparişlerim"
+                bölümünü ziyaret edin. Paketiniz gönderildiğinde e‑posta bildirimi
+                alacaksınız. Lütfen e‑posta gelen kutunuzu ve spam klasörünüzü kontrol edin.
               </p>
               <p>
-                We dispatch all orders within 24 hours of being placed. During
-                our sale periods it can get very busy in our factory, orders may
-                take a little longer to be dispatched so please add five working
-                days just in case.
+                Tüm siparişler 24 saat içinde gönderilir. İndirim dönemlerinde fabrikamızda
+                yoğunluk olabileceğinden siparişlerin gönderimi biraz daha uzun sürebilir.
+                Bu nedenle fazladan 5 iş günü eklemenizi öneririz.
               </p>
             </div>
           </div>
 
           <div className={styles.section}>
-            <span>Payment</span>
+            <span>Ödeme</span>
             <div className={styles.subSection}>
-              <h3>Shipping Rates</h3>
+              <h3>Kargo Ücretleri</h3>
               <p>
-                To review the status of your order please visit the "My Orders"
-                section of your Sunspel Account. You should receive an email
-                notification when your package is dispatched. Please check your
-                email inbox and your junk filter.
+                Siparişinizin durumunu görmek için hesabınızdaki "Siparişlerim"
+                bölümünü ziyaret edin. Paketiniz gönderildiğinde e‑posta bildirimi
+                alacaksınız. Lütfen e‑posta gelen kutunuzu ve spam klasörünüzü kontrol edin.
               </p>
               <p>
-                We dispatch all orders within 24 hours of being placed. During
-                our sale periods it can get very busy in our factory, orders may
-                take a little longer to be dispatched so please add five working
-                days just in case.
+                Tüm siparişler 24 saat içinde gönderilir. İndirim dönemlerinde fabrikamızda
+                yoğunluk olabileceğinden siparişlerin gönderimi biraz daha uzun sürebilir.
+                Bu nedenle fazladan 5 iş günü eklemenizi öneririz.
               </p>
               <p>
-                If there’s something you want to know about your order, please
-                get in touch with us at customerservice@example.com call us on
-                +44 (0)115 111 1111.
+                Siparişinizle ilgili bilmek istediğiniz bir şey olursa
+                customerservice@example.com adresinden bize e‑posta gönderebilir veya
+                +44 (0)115 111 1111 numaralı telefondan arayabilirsiniz.
               </p>
             </div>
             <div className={styles.subSection}>
-              <h3>Currency</h3>
+              <h3>Para Birimi</h3>
               <p>
-                Our website automatically selects the currency that matches your
-                delivery location. You can change this manually in the top left
-                hand corner of the page.
+                Web sitemiz teslimat adresinize göre para birimini otomatik seçer.
+                Bunu sayfanın sol üst köşesinden manuel olarak değiştirebilirsiniz.
               </p>
               <p>
-                For deliveries to the UK, we will bill you in Pounds Sterling
-                (£), to the European Union in Euros (€), to the US in Dollars
-                ($), and to the Rest of World in Pounds Sterling (£).
+                İngiltere teslimatlarında Pound (£), Avrupa Birliği’nde Euro (€),
+                ABD’de Dolar ($), diğer ülkelerde Pound (£) ile ödeme alınır.
               </p>
               <p>
-                Standard rate VAT is included in all orders to the UK and
-                Europe. Orders to the Rest of the World do not include VAT.
-                Where applicable, you will be responsible for any local country
-                import duty.
+                İngiltere ve Avrupa’ya yapılan siparişlerde KDV dahildir.
+                Diğer ülkelere yapılan siparişlerde KDV dahil değildir.
+                Gerekli durumlarda yerel gümrük vergilerinden siz sorumlu olursunuz.
               </p>
             </div>
             <div className={styles.subSection}>
-              <h3>Suspect Fraud?</h3>
+              <h3>Sahtekarlık Şüphesi?</h3>
               <p>
-                Given our high levels of security, it’s very unlikely fraudulent
-                use of your card will take place on our website. But if a
-                fraudulent transaction does take place, first contact your
-                credit or debit card company so they can protect your card and
-                reimburse you. Then let us know at customerservice@example.com
-                and we will work with your card company to minimise any further
-                inconvenience to you.
+                Yüksek güvenlik seviyemiz sayesinde kartınızın sahte kullanımına
+                sitemizde rastlanması çok düşük ihtimaldir. Ancak böyle bir işlem
+                gerçekleşirse, önce kart sağlayıcınızla iletişime geçerek kartınızı
+                koruma altına aldırın ve iade talebinde bulunun. Ardından
+                customerservice@example.com adresinden bize bildirin, biz de kart
+                sağlayıcınızla birlikte çalışarak size daha fazla sorun yaşatmamak için
+                gerekli adımları atalım.
               </p>
             </div>
           </div>

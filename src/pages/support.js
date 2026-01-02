@@ -11,12 +11,12 @@ import Container from '../components/Container';
 
 const SupportPage = (props) => {
   const subpages = [
-    { title: 'Shipping', key: 'shipping' },
-    { title: 'Returns', key: 'returns' },
-    { title: 'Payments & Security', key: 'payments' },
-    { title: 'Terms & Conditions', key: 'terms' },
-    { title: 'Contact Us', key: 'contact' },
-    { title: 'Privacy Policy', key: 'policy' },
+    { title: 'Kargo', key: 'shipping' },
+    { title: 'İade', key: 'returns' },
+    { title: 'Ödeme & Güvenlik', key: 'payments' },
+    { title: 'Şartlar & Koşullar', key: 'terms' },
+    { title: 'Bize Ulaşın', key: 'contact' },
+    { title: 'Gizlilik Politikası', key: 'policy' },
   ];
 
   const [current, setCurrent] = useState(subpages[4]);
