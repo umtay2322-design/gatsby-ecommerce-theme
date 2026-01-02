@@ -31,7 +31,7 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Bilmem Ne Atölyesi\'ne Hoşgeldiniz'}
+        title={'SEMA nın Atölyesi\'ne Hoşgeldiniz'}
         subtitle={'Giyim ihtiyaçlarınızın tek adresi'}
         ctaText={'Şimdi alışverişe başla'}
         ctaAction={goToShop}
