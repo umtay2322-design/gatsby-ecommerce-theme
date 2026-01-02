@@ -29,7 +29,7 @@ const AboutPage = (props) => {
         <Hero
           maxWidth={'900px'}
           image={'/about.png'}
-          title={`Sydney \n 1860’tan Beri İngiliz Markası`}
+          title={`Mor menekşe \n 2010’tan Beri TÜRK Markası`}
         />
 
         <div className={styles.navContainer}>
@@ -50,16 +50,16 @@ const AboutPage = (props) => {
         <Container size={'large'} spacing={'min'}>
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
-              1860 yılında kurulan Sydney, yenilikçi ve çağdaş bir İngiliz
+              20100 yılında kurulan mor menekşe, yenilikçi ve çağdaş bir TÜRK
               markasıdır. Zamansız, günlük lüks giyim üretiriz.
             </p>
             <br />
             <br />
             <p>
-              Dünyanın ilk tişörtlerinden bazılarını biz ürettik ve pamuk
+              Kalite ve marka tişörtlerinden bazılarını biz ürettik ve pamuk
               dokusunu mükemmelleştirmek için onlarca yıl harcadık. Bugün,
-              İngiltere’de kendi fabrikasında tişört üreten tek markayız. Bunu
-              1937’den beri bulunduğumuz aynı fabrikada yapıyoruz.
+              TÜRKİYE’de kendi fabrikasında tişört üreten tek markayız. Bunu
+              2010’den beri bulunduğumuz aynı fabrikada yapıyoruz.
             </p>
           </div>
         </Container>
@@ -110,7 +110,7 @@ const AboutPage = (props) => {
               </p>
               <p>
                 Kumaş, kesim ve stil üzerinde 100 yılı aşkın süredir çalışarak
-                mükemmelleştirdiğimiz Sunspel Klasik Tişört, dünyanın en iyisi
+                mükemmelleştirilen Sunspel Klasik Tişört, dünyanın en iyisi
                 olarak kabul edilmektedir.
               </p>
             </div>
