@@ -14,6 +14,7 @@ import Icon from '../Icons/Icon';
 import MiniCart from '../MiniCart';
 import MobileNavigation from '../MobileNavigation';
 import * as styles from './Header.module.css';
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = (prop) => {
   const [showMiniCart, setShowMiniCart] = useState(false);
