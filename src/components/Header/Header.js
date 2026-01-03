@@ -155,6 +155,17 @@ const Header = (prop) => {
                 <span>1</span>
               </div>
             </button>
+            {/* ✅ WhatsApp butonu buraya eklendi */}
+  <a
+    href="https://wa.me/905xxxxxxxxx"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`${styles.iconContainer} ${styles.hideOnMobile}`}
+    style={{ color: "green", marginLeft: "10px" }}
+  >
+    <Icon symbol={'whatsapp'} /> WhatsApp
+  </a>
+
             <div className={styles.notificationContainer}>
               <AddNotification openCart={() => setShowMiniCart(true)} />
             </div>
