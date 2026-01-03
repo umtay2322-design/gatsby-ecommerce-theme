@@ -158,7 +158,7 @@ const Header = (prop) => {
             </button>
             {/* ✅ WhatsApp butonu buraya eklendi */}
   <a
-    href="https://wa.me/905xxxxxxxxx"
+    href="https://wa.me/905550180066"
     target="_blank"
     rel="noopener noreferrer"
     className={`${styles.iconContainer} ${styles.hideOnMobile}`}
